@@ -24,6 +24,7 @@ import VIewPage from "./Test_works/CRUD/VIewPage";
 import EditUser from "./Test_works/CRUD/EditUser";
 import DeleteUser from "./Test_works/CRUD/DeleteUser";
 import Adduser from "./Test_works/CRUD/Adduser";
+import RouterToDo from "./Test_works/ToDo/RouterToDo";
 
 
  const NewContext = createContext();
@@ -49,7 +50,10 @@ function App() {
       {/* <Router5/> */}
       {/* <Form1/> */}
       {/* <RegForm/> */}
-      <NewContext.Provider value={[data ,setdata]}>
+
+
+
+      {/* <NewContext.Provider value={[data ,setdata]}>
         <BrowserRouter>
         <Routes>
           <Route path="/"  element={<TableCrud/>}/>
@@ -61,7 +65,9 @@ function App() {
         </Routes>
         
         </BrowserRouter>
-      </NewContext.Provider>
+      </NewContext.Provider> */}
+
+      <RouterToDo/>
 
 
     </div>
