@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.homeBanner{
+    display: flex;
+    flex-direction: row;
+    padding:  90px 30px;
+}
+#stoppara{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+#chancepara{
+    color: rgb(219, 243, 222);
+    font-size: 17px;
+    padding: 35px 0px  20px 0px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.three-lines h1 {
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-bottom:-30px; /* Adjust the gap by changing the margin value */
+
+  }
+  
+
+.contentetbanner h1{
+    font-size: 105px;
+    color: white;
+    font-weight: 1000;
+    letter-spacing: -5px;
+}
+
+#launchBtn{
+    border-radius: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    padding: 15px 30px;
+    color: #0f261f;
+    background-color:rgb(80 244 12) ;
+}
+
+.imgbanner {
+    overflow: hidden; /* Ensure the image doesn't overflow its container */
+  }
+  
+  .slide-up {
+    animation: slideUp 2s cubic-bezier(0.19, 1, 0.22, 1); /* Adjust duration and timing function as needed */
+    transform-origin: bottom;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+  

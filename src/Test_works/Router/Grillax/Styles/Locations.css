@@ -1,0 +1,16 @@
+.mainBanner1{
+    background-image: url('https://thegrillax.com/wp-content/uploads/2019/12/Barbecue-dish-item-3.jpg');
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: none;
+    
+}
+.mainBanner1 h1{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: white;
+    font-size: 64px;
+
+}

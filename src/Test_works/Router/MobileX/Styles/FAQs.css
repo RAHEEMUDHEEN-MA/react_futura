@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.helpH1{
+    font-size: 130px;
+    color: white;
+    font-weight: 1000;
+    letter-spacing: -6px;
+    word-spacing: -15px;
+}

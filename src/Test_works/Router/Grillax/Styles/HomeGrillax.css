@@ -1,0 +1,155 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container1{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    
+   
+}
+
+.videobg{
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   position: absolute;
+   object-fit: cover;
+   z-index: -1; 
+   
+}
+.Content{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 15%;
+    
+}
+.Content h1{
+    color: white;
+    font-size: 84px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: -1px;
+}
+.Content p{
+    color: white;
+    font-weight: 500;
+}
+
+.leftcntr{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0px 80px 80px;
+
+    
+}
+.leftcntr h1{
+    font-size: 64px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+.leftcntr p{
+   font-size: 17px;
+   font-weight: 500;
+}
+.leftcntr span{
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+   
+}
+
+.leftcntr span img{
+    height: 35px;
+}
+.leftcntr span img:hover{
+   cursor: pointer;
+}
+
+.midcntr{
+    background-color: rgba(240, 221, 215, 0.529);
+    padding: 60px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.midcntr img{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  
+}
+.imgholder{
+    background-color: #ee4c22;
+    padding: 9px;
+    border-radius: 2px;
+
+
+}
+
+.rightcntr{
+    background-color: #ee4c22;
+    padding:  80px
+}
+
+.hours h2{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 30px;
+
+}
+
+.hours p{
+    font-size: 15px;    
+    color: white;
+    font-weight: 600;
+
+}
+
+.right{
+    background-color: #ee4c22;
+    padding: 80px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+}
+.right img{
+    overflow: hidden;
+    margin: 20px 0px;
+}
+
+.right h1{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.right{
+    color: white;
+    text-align: left;
+}
+.left{
+    background-color: #142130;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: left;
+    padding: 100px;
+}
+.left p{
+    font-size: 16px;
+    font-family: sans-serif;
+
+}

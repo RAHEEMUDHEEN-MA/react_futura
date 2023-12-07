@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.firstbanner{
+    box-shadow: 0px 1px 0px 0px rgba(245, 245, 220, 0.147);
+    
+}
+
+.unlockp{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.seewhatH1{
+    font-size: 105px;
+    color: white;
+    font-weight: 1000;
+    letter-spacing: -5px;
+    word-spacing: -7px;
+}
+.smileImg{
+    margin-top: -80px;
+    width: 580px;
+}
+
+.slide-up {
+    animation: slideUp 2s cubic-bezier(0.19, 1, 0.22, 1); 
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+  
+
+.bringphoneH1{
+    font-size: 89px;
+    color: white;
+    font-weight: 1000;
+    letter-spacing: -5px;
+    word-spacing: -7px;
+    margin: 0;
+    padding: 0;
+    line-height: 75px;
+}
+.para{
+    color: white;
+    font-size: 17px;
+}
+
+.whitebanner{
+    padding: 150px 100px;
+}
+
+#checkH1{
+    color: #0f261f;
+
+}
+.checkPara{
+    font-size: 20px;
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 450;
+}
+
+.imeiform{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: solid rgb(221, 221, 221) 1px;
+    border-radius: 5px;
+
+}
+.imeiform input{
+    width: 465px;
+    border: none;
+     
+}
+
+#leftImgMen{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    object-fit: fill;
+}
+.rightcontainer{
+    background-color:  rgb(210 233 224);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding: 100px 120px;
+    
+}
+#unlocked{
+    color: #0f261f;
+}
+.unlockPara{
+    font-size: 20px;
+    padding: 40px 40px;
+    text-align: left;
+    font-weight: 500;
+
+}

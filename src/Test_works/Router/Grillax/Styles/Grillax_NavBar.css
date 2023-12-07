@@ -1,0 +1,56 @@
+
+.Navbar{
+    padding: 0px 160px;
+    /* background-color: bisque; */
+}
+.Container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.Nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.links{
+    padding: 50px 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.links:hover{
+    color: #ee4c22;
+}
+
+.links:active{
+    color: #ee4c22;
+}
+.activeLink {
+    /* Style for active link (e.g., green color) */
+    color: green;
+    /* You can add additional styles here */
+  }
+
+
+#FranchiseBtn{
+    color: white;
+    background-color: #ee4c22;
+    border: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    padding: 15px 35px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+
+
+    
+}
+
+

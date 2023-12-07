@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.premiumban{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(49, 73, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+.premiumban p{
+    color: white;
+    text-align: justify;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 450;
+}
+
+.premiumban a {
+    text-decoration: none;
+    color: rgb(80 244 12);
+    font-size: 14px;
+    font-weight: 500;
+
+}

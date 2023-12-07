@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.buildcontainer{
+    margin-top: -4px;
+}
+
+.rightConatiner{
+    background-color:  rgb(210 233 224);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 50vw; */
+    height: 50vw;
+    overflow: hidden;
+    padding: 100px 0px;
+        
+}
+#leftImgLady{
+    width: 50vw;
+    height: 50vw;
+    object-fit: cover;
+}
+
+.ftrH1{
+    font-size: 89px;
+    color: #0f261f;
+    font-weight: 1000;
+    letter-spacing: -5px;
+    text-align: center;
+    line-height: .9;
+}
+.xlogo{
+    margin-top: -35px;
+}
+
+.slide-up {
+    animation: slideUp 2s cubic-bezier(0.19, 1, 0.22, 1); /* Adjust duration and timing function as needed */
+    transform-origin: bottom;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+  
+
+.listContainer ul li{
+    padding: 10px;
+    box-shadow: 0px 1px 0px  0px rgba(109, 109, 109, 0.46);
+    font-size: 17px;
+    font-weight: 500;
+   list-style: none;
+}
+ a{
+    padding: 100px 10px;
+}
+
+
+
+
+
+
+
+
+
+.leftsidebanner{
+    background-color:  rgb(210 233 224);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding: 100px 0px;
+    
+}
+
+.controlh1{
+    font-size: 90px;
+    color: #0f261f;
+    font-weight: 1000;
+    letter-spacing: -5px;
+    text-align: center;
+    line-height: .9;
+}
+.leftsidebanner p{
+    padding-top: 40px;
+    font-size: 19px;
+    font-weight: 500;
+    text-align: center;
+}
+#Orpara{
+    font-size: 17px;
+}
+
+
+.Rightsidebanner{
+    background-color: blue;
+    padding: 0px;
+    
+}
+
+#rightImgMen{
+    max-width: 100%;
+  height: auto;
+  display: flex;
+  object-fit: fill;
+    
+}

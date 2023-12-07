@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0%;
+}
+.Mainbanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 0px 0px 0px;
+  background-attachment: fixed;
+  background-position: 50%;
+  background-image: url('../Assets/cooked-dish.jpg'  );
+  /* https://1g8d8d.n3cdn1.secureserver.net/wp-content/uploads/2019/12/cooked-dish.jpg?time=1700828283%22 */
+  }
+
+  
+
+
+.Mainbanner h3 {
+  color: #ee4c22;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  
+}
+
+.Mainbanner h1 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: white;
+  font-size: 65px;
+  margin-bottom: 80px;
+}
+
+.Mainbanner p{
+  font-family: sans-serif;
+  color: white;
+}
+
+.triangle_up {
+  width: 0;
+  height: 0;
+  border-left: 300px solid transparent; /* Change the size as needed */
+  border-right: 300px solid transparent; /* Change the size as needed */
+  border-bottom: 45px solid white; /* Change the color and size as needed */
+  margin-top: 100px;
+}
+
+
+/* //// */
+.secondBanner{
+  background-color: rgb(255, 246, 243);
+  display: flex;justify-content: center;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.secondBanner h1{
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 45px;
+  margin-bottom: 40px;
+
+}
+.secondBanner p{
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-bottom: 70px;
+}
+.Carousel1{
+  /* height: 500px; */
+  box-shadow: -1px 1px 40px 0px rgba(35, 35, 35, 0.273);
+}
+
+.Carousel1 img{
+  height: 500px;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.thirdBanner{
+  background-color: rgb(255, 246, 243);
+  display: flex;justify-content: center;
+  /* text-align: center; */
+  padding-bottom: 100px;
+}
+
+.good{
+ /* background-color: #ee4c22; */
+ padding: 0px 70px 0px 80px;
+}
+.line{
+  height: 2px;
+  background-color: #ee4c22;
+  width: 60px;
+  margin: 50px 0px;
+}
+.thirdBanner h1{
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 45px;
+  margin-bottom: 40px;
+
+}
+
+.thirdBanner p{
+  font-family: sans-serif;
+  font-size: 16px;
+  /* margin-bottom: 70px; */
+}
+
+.thirdBanner {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-bottom: 70px;
+}
+
+.orangeBtn{
+  background-color: #ee4c22;
+  padding: 12px 35px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: white;
+  border: none;
+  margin-top: 35px;
+  border-radius: 50px;
+}
+
+.goodimg img{
+  width: 100%;
+  height: 510px;
+  object-fit: cover;
+  padding-right: 80px;
+}
+
+.slideDown{
+  animation: slideDown 2000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform-origin: top;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 10%;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+}
+
+.slideUp{
+  animation: slideUp 3000ms cubic-bezier(0.19, 0.05, 0.02, 1);
+  transform-origin: bottom;
+}
+
+@keyframes slideUp {
+  from{
+    transform: translateY(200%);
+    opacity: 0%;
+  }
+  to{
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+  
+}
