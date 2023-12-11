@@ -20,7 +20,7 @@ function NavToDo() {
 
       <div className="navright">
         <NavLink activeClassName="activeLinkss" to="/deleted">
-          <img className="bin" src={trash} alt="Trash" />
+          <img height={35} className="bin" src={trash} alt="Trash" />
         </NavLink>
       </div>
     </div>

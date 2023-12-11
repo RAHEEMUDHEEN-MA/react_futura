@@ -51,6 +51,27 @@
     margin-left: 20px;
 }
 
+@media only screen and (max-width:960px){
+    .maindiv input{
+        padding: 15px;
+        width: 350px;
+    }
+}
+
+
+@media only screen and (max-width:720px){
+    .maindiv input{
+        padding: 15px;
+        width: 300px;
+    }
+}
+@media only screen and (max-width:640px){
+    .maindiv input{
+        padding: 15px;
+        width: 270px;
+    }
+}
+
 #lineh{
     margin-top: 50px;
     margin-bottom: 25px;

@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { ToDoContext } from './RouterToDo'
-import './Styles/ToDotiles.css'
+import "./Styles/ToDoDrid.css";
 
 import completedImage from "./assets/icons8-checkmark-25.png";
 import editimg from "./assets/icons8-edit-25 (1).png";
@@ -33,7 +33,7 @@ function ToDotiles() {
     }
   return (
     <div className="tileGrid">
-    {alldata.map((demo,tileindex) => (
+    {data.map((demo,tileindex) => (
       <div className="tile" key={demo.id}>
         <div className="leftstatusBar" style={{
               backgroundColor:

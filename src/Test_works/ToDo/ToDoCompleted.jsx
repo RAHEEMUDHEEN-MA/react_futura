@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import './Styles/ToDoCompleted.css'
+import "./Styles/ToDoDrid.css";
 import { ToDoContext } from "./RouterToDo";
 import completedImage from "./assets/icons8-checkmark-25.png";
 import editimg from "./assets/icons8-edit-25 (1).png";
@@ -16,7 +16,7 @@ function ToDoCompleted() {
     <div className="tileGrid">
     {pendingdata.map((demo) => (
       <div className="tile">
-        <div className="leftstatusBarC" style={{
+        <div className="leftstatusBar" style={{
           backgroundColor:"#047d53"
             }} >
           <p>{demo.status}</p>
