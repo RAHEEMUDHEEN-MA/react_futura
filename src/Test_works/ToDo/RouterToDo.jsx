@@ -1,16 +1,27 @@
 import React, { createContext, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ToDodata from "./ToDoData";
+import HomeToDo from "./HomeToDo";
+import ToDotiles from "./ToDotiles";
+import TodoPending from "./TodoPending";
+import ToDoCompleted from "./ToDoCompleted";
+import ToDoDeleted from "./ToDoDeleted";
+import EditToDo from "./EditToDo";
 const ToDoContext = createContext();
 function RouterToDo() {
   const [data, setdata] = useState(ToDodata);
 
   return (
-    <div>
-      <ToDoContext.Provider>
+    <div style={{backgroundColor:"#2C2A2D"}}>
+      <ToDoContext.Provider value={[data,setdata]}>
         <BrowserRouter>
           <Routes>
-            <Route  path="/" />
+            <Route  path="/" element={<HomeToDo/>} />
+            <Route  path="/all" element={<><HomeToDo/> <ToDotiles/></>} />
+            <Route  path="/pending" element={<><HomeToDo/> <TodoPending/></>} />
+            <Route  path="/completed" element={<><HomeToDo/> <ToDoCompleted/></>} />
+            <Route  path="/deleted" element={<><HomeToDo/> <ToDoDeleted/></>} />
+            <Route  path="/edit/:todoid" element={<> <EditToDo/></>} />
           </Routes>
         </BrowserRouter>
       </ToDoContext.Provider>
@@ -19,3 +30,4 @@ function RouterToDo() {
 }
 
 export default RouterToDo;
+export {ToDoContext}
