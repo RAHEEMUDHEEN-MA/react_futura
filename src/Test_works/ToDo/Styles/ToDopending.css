@@ -24,11 +24,11 @@
   }
   
 .tile{
-    /* background-color: wheat; */
+    /* background-color: rgba(179, 215, 245, 0.259); */
     display: flex;
     flex-direction: row;
     border-radius: 10px ;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.453);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.823);
 }
 .leftstatusBar{
     /* background-color: #8a1212; */

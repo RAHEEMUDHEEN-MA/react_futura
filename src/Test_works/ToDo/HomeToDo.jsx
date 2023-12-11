@@ -3,6 +3,7 @@ import "./Styles/HomeToDo.css";
 import ToDodataArray from "./ToDoData";
 import { ToDoContext } from "./RouterToDo";
 import NavToDo from "./NavToDo";
+import addicon from './assets/icons8-add-40.png'
 
 function HomeToDo() {
   const [data, setdata] = useContext(ToDoContext);
@@ -54,8 +55,9 @@ function HomeToDo() {
   return (
     <div className="maindiv">
       <div className="headsection">
+        <img height={60} src="https://cdn-icons-png.flaticon.com/512/8832/8832108.png" alt="" />
         <h1 className="heading">ToDo..</h1>
-        <span id="strokeline"></span>
+        
       </div>
 
       <form onSubmit={handleSubmit}>
@@ -65,8 +67,8 @@ function HomeToDo() {
           placeholder="ToDo.."
           value={atodo}
         />
-        <button id="addBtn" type="submit">
-          +
+        <button id="addimg" type="submit">
+          <img  height={30} src={addicon} alt="" />
         </button>
       </form>
 

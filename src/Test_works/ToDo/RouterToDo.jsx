@@ -12,7 +12,7 @@ function RouterToDo() {
   const [data, setdata] = useState(ToDodata);
 
   return (
-    <div style={{backgroundColor:"#2C2A2D"}}>
+    <div style={{backgroundColor:"#092635"}}>
       <ToDoContext.Provider value={[data,setdata]}>
         <BrowserRouter>
           <Routes>
