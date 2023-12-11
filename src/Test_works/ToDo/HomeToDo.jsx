@@ -14,11 +14,11 @@ function HomeToDo() {
   const [astatus, setastatus] = useState("");
   const [lastid, setLastId] = useState(7);
 
-  console.log(atodo);
-  console.log(adate);
-  console.log(atime);
-  console.log(astatus);
-  console.log(lastid);
+  // console.log(atodo);
+  // console.log(adate);
+  // console.log(atime);
+  // console.log(astatus);
+  // console.log(lastid);
 
   useEffect(() => {
     const currentDate = new Date();
@@ -48,6 +48,7 @@ function HomeToDo() {
     setdata([...data, newToDo]);
     setatodo(""); // Clear input field after submission
     setLastId((prevId) => prevId + 1);
+    console.log("added",data)
   };
 
   return (

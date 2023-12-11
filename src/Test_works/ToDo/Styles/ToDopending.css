@@ -12,6 +12,17 @@
     grid-template-rows: 180px 180px 180px 180px 180px  ;
     gap: 35px;
 }
+
+/* For screens smaller than or equal to 600 pixels wide (considered as mobile) */
+@media only screen and (max-width: 600px) {
+    .tileGrid {
+      /* Modify the number of columns in the grid */
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two columns */
+      gap: 10px; /* Optional: Adjust the gap between tiles */
+    }
+  }
+  
 .tile{
     /* background-color: wheat; */
     display: flex;
@@ -42,6 +53,7 @@
     display: flex;
     width: 100%;
     flex-direction: column;
+    color: rgba(255, 255, 255, 0.856);
 }
 
 .subdiv{

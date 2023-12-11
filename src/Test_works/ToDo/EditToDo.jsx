@@ -2,19 +2,21 @@ import React, { useContext, useEffect, useState } from "react";
 import "./Styles/EditToDo.css";
 import saveimg from "./assets/icons8-save-60.png";
 import { ToDoContext } from "./RouterToDo";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function EditToDo() {
   const [data, setData] = useContext(ToDoContext);
   const { todoid } = useParams();
-  const [selectedTodo, setselectedTodo] = useState(null);
+  console.log("selected id", todoid);
+  const [selectedTodo, setselectedTodo] = useState("");
   const [editedTodo, setEditedTodo] = useState("");
+  const history = useNavigate();
 
   useEffect(() => {
-    const foundTodo = data.find((item) => item.id === todoid);
-    if (foundTodo) {
-      setselectedTodo(foundTodo);
-      setEditedTodo(foundTodo.todo); // Set the initial value of editedTodo to the todo content
+    const temp = data.find((item) => item.id == todoid);
+    if (temp) {
+      setselectedTodo(temp);
+      setEditedTodo(temp.todo);
     }
   }, [data, todoid]);
 
@@ -22,19 +24,22 @@ function EditToDo() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    confirm();
 
-    // Update the todo item in your data source (assuming it's an array)
-    const updatedData = data.map((item) =>
-      item.id === todoid ? { ...item, todo: editedTodo } : item
+   
+  };
+
+  const confirm=()=>{
+    const confirmation=window.confirm('save changes?');
+    if(confirmation){
+      const updatedData = data.map((item) =>
+      item.id == todoid ? { ...item, todo: editedTodo } : item
     );
 
-    // Update the state/context with the modified data
     setData(updatedData);
-  };
-
-  const handleInputChange = (e) => {
-    setEditedTodo(e.target.value); // Update the editedTodo state as the user types
-  };
+    history("/");
+    }
+  }
 
   return (
     <div className="editpage">
@@ -53,7 +58,7 @@ function EditToDo() {
                 <input
                   type="text"
                   value={editedTodo}
-                  onChange={handleInputChange}
+                  onChange={(e) => setEditedTodo(e.target.value)}
                 />
 
                 <div className="options">

@@ -16,7 +16,7 @@ function RouterToDo() {
       <ToDoContext.Provider value={[data,setdata]}>
         <BrowserRouter>
           <Routes>
-            <Route  path="/" element={<HomeToDo/>} />
+            <Route  path="/" element={<><HomeToDo/>  <TodoPending/></>} />
             <Route  path="/all" element={<><HomeToDo/> <ToDotiles/></>} />
             <Route  path="/pending" element={<><HomeToDo/> <TodoPending/></>} />
             <Route  path="/completed" element={<><HomeToDo/> <ToDoCompleted/></>} />

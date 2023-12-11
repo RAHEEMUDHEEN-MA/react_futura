@@ -10,15 +10,27 @@ function TodoPending() {
   const pendingdata = data.filter((item) => item.status === "pending");
 
   const deleteToDo = (id) => {
-    const deletedarray = data.map((item) => {
-      if (item.id === id) {
-        return { ...item, status: "deleted" };
-      }
-      return item;
-    });
-    setdata(deletedarray);
-    console.log('final',data)
+    const confirmation=window.confirm('deleting task!')
+    if(confirmation){
+      const deletedarray = data.map((item) => {
+        if (item.id === id) {
+          return { ...item, status: "deleted" };
+        }
+        return item;
+      });
+      setdata(deletedarray);
+    console.log("final", data);
+    }
+    
+    
   };
+
+  const confirmDlt=()=>{
+    const confirmation=window.confirm('Are you sure ?')
+    if(confirmation){
+        
+    }
+  }
 
   const done = (id) => {
     const donearray = data.map((item) => {
@@ -34,12 +46,8 @@ function TodoPending() {
     <div className="tileGrid">
       {pendingdata.map((demo) => (
         <div className="tile" key={demo.id}>
-          
           <div className="leftstatusBar" style={{ backgroundColor: "#04567D" }}>
-          
             <p>{demo.status}</p>
-            {/* {console.log(tileindex)} */}
-            {/* <span>{demo.id}</span> */}
           </div>
           <div className="mainCont">
             <div className="timeDate">
@@ -54,9 +62,11 @@ function TodoPending() {
                   <button onClick={() => done(demo.id)}>
                     <img height={19} src={completedImage} alt="" />
                   </button>
-                  <Link style={{padding:"0"}} to={`/edit/${demo.id}`} ><button>
-                    <img height={17} src={editimg} alt="" />
-                  </button></Link>
+                  <Link style={{ padding: "0" }} to={`/edit/${demo.id}`}>
+                    <button>
+                      <img height={17} src={editimg} alt="" />
+                    </button>
+                  </Link>
                 </div>
                 <div className="rightoption">
                   <button onClick={() => deleteToDo(demo.id)}>
