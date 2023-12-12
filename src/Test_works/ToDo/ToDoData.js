@@ -42,32 +42,44 @@ const ToDodataArray = [
     status: "completed",
   },
   {
-    id: 6,
+    id: 7,
     date: "01/10/2254",
     time: "7:00",
     todo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita error commodi nisi inventore  illo?",
     status: "completed",
   },
   {
-    id: 7,
+    id: 8,
     date: "21/02/2022",
     time: "12:52",
     todo: "brought a car",
     status: "deleted",
   },
   {
-    id: 7,
+    id: 9,
     date: "21/02/2022",
     time: "1:25",
     todo: "ABCDEFG HIJKLMNP,QE",
     status: "deleted",
   },
   {
-    id: 4,
+    id: 10,
     date: "01/10/2254",
     time: "4:00",
     todo: "Movie ",
     status: "pending",
   },
+  {
+    id: 11,
+    date: "21/10/2204",
+    time: "7:10",
+    todo: "spotify ",
+    status: "pending",
+  },
 ];
+
+const lastObjectId = ToDodataArray[ToDodataArray.length - 1].id;
+
+
 export default ToDodataArray;
+export {lastObjectId}

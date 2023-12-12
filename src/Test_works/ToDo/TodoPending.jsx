@@ -60,17 +60,17 @@ function TodoPending() {
               <div className="options">
                 <div className="leftoption">
                   <button onClick={() => done(demo.id)}>
-                    <img height={19} src={completedImage} alt="" />
+                    <img id="MADBtn" height={19} src={completedImage} alt="" />
                   </button>
                   <Link style={{ padding: "0" }} to={`/edit/${demo.id}`}>
                     <button>
-                      <img height={17} src={editimg} alt="" />
+                      <img id="EDITBtn" height={19} src={editimg} alt="" />
                     </button>
                   </Link>
                 </div>
                 <div className="rightoption">
                   <button onClick={() => deleteToDo(demo.id)}>
-                    <img height={17} src={dltimg} alt="" />
+                    <img id="DLTBtn" height={17} src={dltimg} alt="" />
                   </button>
                 </div>
               </div>

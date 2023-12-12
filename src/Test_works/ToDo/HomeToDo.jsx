@@ -4,6 +4,8 @@ import ToDodataArray from "./ToDoData";
 import { ToDoContext } from "./RouterToDo";
 import NavToDo from "./NavToDo";
 import addicon from './assets/icons8-add-40.png'
+import lastObjectId from "./ToDoData";
+
 
 function HomeToDo() {
   const [data, setdata] = useContext(ToDoContext);
@@ -13,7 +15,9 @@ function HomeToDo() {
   const [adate, setadate] = useState();
   const [atime, setatime] = useState("");
   const [astatus, setastatus] = useState("");
-  const [lastid, setLastId] = useState(7);
+  const [lastid, setLastId] = useState(lastObjectId);
+
+  // console.log("last id:👍👍👍:",lastObjectId)
 
   // console.log(atodo);
   // console.log(adate);
@@ -49,6 +53,7 @@ function HomeToDo() {
     setdata([...data, newToDo]);
     setatodo(""); // Clear input field after submission
     setLastId((prevId) => prevId + 1);
+    console.log("new todo",newToDo)
     console.log("added",data)
   };
 
