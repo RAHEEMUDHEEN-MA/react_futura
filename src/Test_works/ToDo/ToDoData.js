@@ -36,14 +36,14 @@ const ToDodataArray = [
   },
   {
     id: 6,
-    date: "01/10/2254",
+    date: "01/10/2023",
     time: "7:00",
     todo: "shot",
     status: "completed",
   },
   {
     id: 7,
-    date: "01/10/2254",
+    date: "01/10/2024",
     time: "7:00",
     todo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita error commodi nisi inventore  illo?",
     status: "completed",
@@ -64,14 +64,14 @@ const ToDodataArray = [
   },
   {
     id: 10,
-    date: "01/10/2254",
+    date: "01/10/2024",
     time: "4:00",
     todo: "Movie ",
     status: "pending",
   },
   {
     id: 11,
-    date: "21/10/2204",
+    date: "21/10/2024",
     time: "7:10",
     todo: "spotify ",
     status: "pending",
