@@ -11,7 +11,7 @@ function ImageContainer() {
             <p>Paragraph about Image 1</p>
           </Col>
           <Col    lg={6}   >
-            <img style={{ width: '100%' }} src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-87328.jpg" alt="Image 2" />
+            <img style={{ width: '100%' }} src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-87328.jpg" alt="Image2" />
             <p>Paragraph about Image 2</p>
           </Col>
           
