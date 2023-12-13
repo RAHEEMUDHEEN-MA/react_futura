@@ -7,7 +7,7 @@ function ImageContainer() {
       <Container fluid>
         <Row style={{backgroundColor:'blue', margin:'5px'}}>
           <Col    lg={6}   >
-            <img style={{ width: '100%' }} src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-87330.jpg" alt="Image 1" />
+            <img style={{ width: '100%' }} src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-87330.jpg" alt="Image1" />
             <p>Paragraph about Image 1</p>
           </Col>
           <Col    lg={6}   >
