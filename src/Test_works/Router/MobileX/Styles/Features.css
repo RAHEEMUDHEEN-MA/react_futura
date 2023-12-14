@@ -4,22 +4,27 @@
 }
 .buildcontainer{
     margin-top: -4px;
+    display: flex;
 }
-
-.rightConatiner{
+.maincontainer_features{
+   display: flex;
+   flex-direction: column;
+    
+}
+.rightConatiner1{
     background-color:  rgb(210 233 224);
     display: flex;
     flex-direction: column;
     align-items: center;
     /* width: 50vw; */
-    height: 50vw;
+    height: 100%;
     overflow: hidden;
     padding: 100px 0px;
         
 }
 #leftImgLady{
     width: 50vw;
-    height: 50vw;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -99,15 +104,14 @@
 
 
 .Rightsidebanner{
-    background-color: blue;
+    /* background-color: blue; */
     padding: 0px;
     
 }
 
 #rightImgMen{
-    max-width: 100%;
-  height: auto;
-  display: flex;
-  object-fit: fill;
+    width: 50vw;
+    height: 100%;
+    object-fit: cover;
     
 }

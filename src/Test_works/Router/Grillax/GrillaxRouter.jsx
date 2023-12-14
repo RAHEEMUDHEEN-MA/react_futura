@@ -9,8 +9,8 @@ import Locations from './Components/Locations'
 
 function GrillaxRouter() {
   return (
-    <div>
-        
+    <div >
+     
         <BrowserRouter>
         <Grillax_NavBar/>
         

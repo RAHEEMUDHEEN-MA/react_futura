@@ -8,7 +8,7 @@ import TAicon from "../Assets/icons8-tripadvisor-48.png";
 
 function HomeGrillax() {
   return (
-    <div>
+    <div >
       <div className="container1">
         <video className="videobg" src={vid1} autoPlay loop muted></video>
         <div className="Content">

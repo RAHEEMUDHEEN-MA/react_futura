@@ -11,7 +11,7 @@ import FAQs from "./Components/FAQs";
 
 function MobileXRouter() {
   return (
-    <div>
+    <div style={{backgroundColor:"#0f261f"}}>
       <BrowserRouter>
       <Premuim_Banner/>
        <NavBar_Mobilex/>

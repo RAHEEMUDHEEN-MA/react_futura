@@ -33,7 +33,7 @@ function ToDotiles() {
     }
   return (
     <div className="tileGrid">
-    {alldata.map((demo,tileindex) => (
+    {data.map((demo,tileindex) => (
       <div className="tile" key={demo.id}>
         <div className="leftstatusBar" style={{
               backgroundColor:

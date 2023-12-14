@@ -14,9 +14,9 @@ function Home() {
         </div>
         <div>
           <div class="three-lines">
-            <h1>SEE HOW MUCH</h1>
-            <h1>YOU'D <span style={{color:"rgb(80 244 12)"}}>SAVE WITH</span> </h1>
-            <h1 style={{color:"rgb(80 244 12)"}}>MOBILEX.</h1>
+            <h1 id="word1">SEE HOW MUCH</h1>
+            <h1 id="word2">YOU'D <span style={{color:"rgb(80 244 12)"}}>SAVE WITH</span> </h1>
+            <h1 id="word3" style={{color:"rgb(80 244 12)"}}>MOBILEX.</h1>
           </div>
         </div>
         <div>

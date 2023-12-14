@@ -6,8 +6,8 @@ import { Button, Row,Col } from "react-bootstrap";
 
 function Features() {
   return (
-    <div className="maincontainer">
-      <Row className="d-flex buildcontainer">
+    <div className="maincontainer_features">
+      <Row className=" buildcontainer">
         <Col md={6}>
           <img
             id="leftImgLady"
@@ -15,7 +15,7 @@ function Features() {
             alt=""
           />
         </Col>
-        <Col md={6} className="rightConatiner">
+        <Col md={6} className="rightConatiner1">
           <div>
             <h1 className="ftrH1">
               BUILD A PLAN THAT FITS
