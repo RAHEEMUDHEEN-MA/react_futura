@@ -25,6 +25,7 @@ import { createContext, useState } from "react";
 // import DeleteUser from "./Test_works/CRUD/DeleteUser";
 // import Adduser from "./Test_works/CRUD/Adduser";
 import RouterToDo from "./Test_works/ToDo/RouterToDo";
+import Home_weather from "./Test_works/weather app/Home_weather";
 // import EditToDo from "./Test_works/ToDo/EditToDo";
 
 
@@ -35,7 +36,8 @@ function App() {
 
   return (
     <div className="App">
-      <RouterToDo/>
+      {/* <RouterToDo/> */}
+      <Home_weather/>
     </div>
   );
 }
