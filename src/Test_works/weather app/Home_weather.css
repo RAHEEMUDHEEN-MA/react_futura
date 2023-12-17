@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.TopBar {
+  width: 100%;
+  height: 12vh;
+  background-color: rgba(95, 123, 160, 0.597);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TopBarContaniner {
+  width: 80%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchBar {
+  background-color: aliceblue;
+  width: 400px;
+  height: 50px;
+
+  border-radius: 50px;
+  padding-left: 20px;
+  padding-right: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchBar input {
+  border: none;
+  background: none;
+  font-size: 18px;
+}
+
+.searchBar input:focus {
+  outline: none;
+  border: none;
+}
+.searchBar button {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: rgb(68, 141, 237);
+}
+.searchBar button img {
+  height: 25px;
+  width: 25px;
+}
+
+/* --------------------------------------------------------- */
+
+
+.mainBar{
+    width: 100%;
+    height: 44vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------- */
+
+.thirdBar{
+    width: 100%;
+    height: 44vh;
+    background-color: rgb(164, 131, 131);
+}
