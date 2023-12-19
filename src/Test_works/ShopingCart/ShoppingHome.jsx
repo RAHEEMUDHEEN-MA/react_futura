@@ -1,21 +1,29 @@
+import "./ShoppingHome.css"
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Button, Card, Carousel, Col, Container, ListGroup, Row } from 'react-bootstrap';
+import carticon from "./icons8-cart-60.png"
+import { Link } from "react-router-dom";
+import getProductData from "./ShoppingData";
+import productdata from "./ShoppingData";
 
 function ShoppingHome() {
 
-    const [Products,SetProducts]=useState([]);
-    useEffect(() => {
-        axios.get('https://dummyjson.com/products').then((productArray)=>{
-            SetProducts(productArray.data.products)
-
-
-    })
-    }, [])
-    
+    const [Products,SetProducts]=useState(productdata);
+    console.log('apiii',Products)
+   
     
   return (
     <div>
+
+        {/* <div className="topbar_shoping">
+            <p>MyCart</p>
+            <Link to={'/cart'}>
+            <button><img src={carticon} alt="" /></button>
+            </Link>
+            
+            
+        </div>
        
 
         <Container>
@@ -65,7 +73,7 @@ function ShoppingHome() {
                     </Col>
                 ))}
             </Row>
-        </Container>
+        </Container> */}
     </div>
   )
 }

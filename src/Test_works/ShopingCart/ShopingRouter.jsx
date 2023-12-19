@@ -1,24 +1,28 @@
 import React, { createContext, useState } from 'react'
 
-import getProductData from './ShoppingData'
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ShoppingHome from './ShoppingHome'
+import ShopingCart from './ShopingCart'
+
+import fetchProductData from './ShoppingData'
 
 function ShopingRouter() {
-    const ShoppingContext=createContext()
+    // const ShoppingContext=createContext()
 
-    const [data,setdata]=useState(getProductData)
-    console.log(data)
+    const [data,setdata]=useState(fetchProductData)
+    // console.log("dataaa111",data)
 
   return (
     <div>
-        <ShoppingContext.Provider >
+        {/* <ShoppingContext.Provider >
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<ShoppingHome/>}/>
+                    <Route path='/cart' element={<ShopingCart/>}/>
                 </Routes>
             </BrowserRouter>
-        </ShoppingContext.Provider>
+        </ShoppingContext.Provider> */}
       
     </div>
   )
