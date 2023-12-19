@@ -27,10 +27,12 @@ import { createContext, useState } from "react";
 import RouterToDo from "./Test_works/ToDo/RouterToDo";
 import Home_weather from "./Test_works/weather app/Home_weather";
 import GrillaxRouter from "./Test_works/Router/Grillax/GrillaxRouter";
+import ApiCardCarosal from "./Test_works/api/ApiCardCarosal";
+import ShopingRouter from "./Test_works/ShopingCart/ShopingRouter";
 // import EditToDo from "./Test_works/ToDo/EditToDo";
 
 
- const NewContext = createContext();
+//  const NewContext = createContext();
 function App() {
   // const [data, sedata] = useState(Data);
   // const [data,setdata] = useState(DataCrud)
@@ -40,10 +42,12 @@ function App() {
       {/* <RouterToDo/> */}
       {/* <Home_weather/> */}
       {/* <GrillaxRouter/> */}
+      {/* <ApiCardCarosal/> */}
+      <ShopingRouter/>
 
     </div>
   );
 }
 
 export default App;
-export { NewContext };
+// export { NewContext };
