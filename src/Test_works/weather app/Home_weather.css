@@ -17,7 +17,7 @@
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -71,8 +71,35 @@
 
 /* ------------------------------------------------------------------- */
 
-.thirdBar{
+.thirdBar {
+    position: relative;
     width: 100%;
     height: 44vh;
-    background-color: rgb(164, 131, 131);
+}
+
+.locationMap {
+  position: absolute;
+    width: 100%;
+    height: 44vh;
+    z-index: -10;
+}
+
+.thirdBarContainer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.455);
+  z-index: 0;
+}
+
+
+.thirdContent {
+    position: absolute;
+    top: 10%; /* Example: Centering the content vertically */
+    left: 45%; /* Example: Centering the content horizontally */
+  color: white;
+    z-index: 1;
+    text-align: center;
+    
+
 }

@@ -11,7 +11,7 @@ import nightIMg from "./Assets/night.jpg";
 function HomeWeather() {
   const [data, setdata] = useState([]);
 
-  const [location, setlocation] = useState("kozhikode");
+  const [location, setlocation] = useState("india");
   const [longitude, setlongitude] = useState("");
   const [latitude, setlatitude] = useState("");
   const [data_time, setdata_time] = useState("");
@@ -25,24 +25,23 @@ function HomeWeather() {
   const search = (event) => {
     console.log(location);
     if (event.key === "Enter") {
+      axios
+        .get(
+          `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=c0d290eeee9dd399b017a6d2ba64be7e`
+        )
+        .then((demo) => {
+          setdata([demo.data]);
+
+          console.log("weather!!:", location, demo.data);
+          setlongitude(demo.data.coord.lon);
+          setlatitude(demo.data.coord.lat);
+          console.log(longitude, latitude);
+        })
+        .catch((error) => {
+          alert("Location not found");
+          console.error("Error weather data:", error);
+        });
     }
-
-    axios
-      .get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=c0d290eeee9dd399b017a6d2ba64be7e`
-      )
-      .then((demo) => {
-        setdata([demo.data]);
-
-        console.log("weather!!:", location, demo.data);
-        setlongitude(demo.data.coord.lon);
-        setlatitude(demo.data.coord.lat);
-        console.log(longitude, latitude);
-      })
-      .catch((error) => {
-        alert("Location not found");
-        console.error("Error weather data:", error);
-      });
   };
 
   // const search=()=>{
@@ -106,20 +105,20 @@ function HomeWeather() {
     <div>
       <div className="TopBar">
         <div className="TopBarContaniner">
-          <a href="">Weather.com</a>
+          {/* <a href="">Weather.com</a> */}
           <div className="searchBar">
             <input
               type="text"
               placeholder="search a city"
               value={location}
               onChange={(e) => setlocation(e.target.value)}
-              // onKeyPress={search}
+              onKeyPress={search}
             />
             <button onClick={search}>
               <img src={searchicon} alt="" />
             </button>
           </div>
-          <p>°C</p>
+          {/* <p>°C</p> */}
         </div>
       </div>
 
@@ -131,25 +130,70 @@ function HomeWeather() {
             <h1>{demo.name}</h1>
             <h1>{demo.main && Math.round(demo.main.temp - 273.15)}°C</h1>
             {data.map((demo) => (
-          <div key={demo.id}>
-            {demo.weather.map((weather) => (
-              <div key={weather.id}>
-                <h2>{weather.description}</h2>
+              <div key={demo.id}>
+                {demo.weather.map((weather) => (
+                  <div key={weather.id}>
+                    <h2>{weather.description}</h2>
+                  </div>
+                ))}
               </div>
             ))}
           </div>
         ))}
-          </div>
-        ))}
-
-       
       </div>
 
       {/* -------------------------------------------------------------------------------- */}
 
       <div className="thirdBar">
-        <div className="thirdBarContainer"></div>
+   
+    <div className="mapContainer">
+        <div className="locationMap">
+           
+            <iframe
+                title="Google Map"
+                width="100%"
+                height="320"
+                allowFullScreen
+                src={googleMapUrl}
+            />
+        </div>
+    </div>
+    <div className="thirdBarContainer">
+      
       </div>
+    <div className="thirdContent">
+    {data.map((demo) => (
+          <div key={demo.id}>
+            {demo.weather.map((weather) => (
+              <div key={weather.id}>
+                <p>{weather.description}</p>
+                <img
+                  src={getWeatherIconUrl(weather.icon)}
+                  alt={weather.description}
+                  height={70}
+                />
+              </div>
+            ))}
+          </div>
+        ))}
+    {data.map((demo) => (
+          <div key={demo.id} className="">
+            <p>
+              Humidity
+              <WiHumidity />:{demo.main.humidity}%
+            </p>
+            <p id="wind">
+              Wind
+              <WiStrongWind />:{demo.wind.speed}m/s
+            </p>
+            <p>
+              cordinates:{demo.coord.lat},{demo.coord.lon}
+            </p>
+            <p>time:{data_time}</p>
+          </div>
+        ))}
+    </div>
+</div>
     </div>
   );
 }

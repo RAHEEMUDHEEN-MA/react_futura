@@ -2,8 +2,7 @@
 import React, { useContext } from "react";
 import "./Styles/ToDoDrid.css";
 import { ToDoContext } from "./RouterToDo";
-import completedImage from "./assets/icons8-checkmark-25.png";
-import editimg from "./assets/icons8-edit-25 (1).png";
+
 import restoreimg from "./assets/icons8-restore-25.png";
 
 function ToDoDeleted() {

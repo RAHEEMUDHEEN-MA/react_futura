@@ -18,13 +18,7 @@ function HomeToDo() {
   const [astatus, setastatus] = useState("");
   const [lastid, setLastId] = useState(lastObjectId);
 
-  // console.log("last id:👍👍👍:",lastObjectId)
 
-  // console.log(atodo);
-  // console.log(adate);
-  // console.log(atime);
-  // console.log(astatus);
-  // console.log(lastid);
 
   useEffect(() => {
     const currentDate = new Date();
