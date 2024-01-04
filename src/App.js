@@ -29,6 +29,7 @@ import Home_weather from "./Test_works/weather app/Home_weather";
 import GrillaxRouter from "./Test_works/Router/Grillax/GrillaxRouter";
 import ApiCardCarosal from "./Test_works/api/ApiCardCarosal";
 import ShopingRouter from "./Test_works/ShopingCart/ShopingRouter";
+import SignUp from "./Test_works/Credential/SignUp";
 // import EditToDo from "./Test_works/ToDo/EditToDo";
 
 
@@ -43,7 +44,8 @@ function App() {
       {/* <Home_weather/> */}
       {/* <GrillaxRouter/> */}
       {/* <ApiCardCarosal/> */}
-      <ShopingRouter/>
+      {/* <ShopingRouter/> */}
+      <SignUp/>
 
     </div>
   );

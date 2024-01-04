@@ -9,14 +9,31 @@ import productdata from "./ShoppingData";
 
 function ShoppingHome() {
 
-    const [Products,SetProducts]=useState(productdata);
-    console.log('apiii',Products)
+  const [Products,SetProducts]=useState([]);
+  const [cart,setcart]=useState()
+  useEffect(() => {
+    axios.get('https://dummyjson.com/products').then((productArray)=>{
+        SetProducts(productArray.data.products)
+
+
+})
+}, [])
+
+const addcart=()=>{
+  // setcart
+
+
+}
+
+
+
+
    
     
   return (
     <div>
 
-        {/* <div className="topbar_shoping">
+        <div className="topbar_shoping">
             <p>MyCart</p>
             <Link to={'/cart'}>
             <button><img src={carticon} alt="" /></button>
@@ -29,7 +46,8 @@ function ShoppingHome() {
         <Container>
             <Row xs={1} sm={2} md={3} lg={4} xl={5} >
                 {Products.map((demo)=>(
-                    <Col className='m-4' >
+                    <Col className='m-4' key={demo.id}>
+                      <p>{demo.id}</p>
                          <Card style={{ width: '18rem' }}>
                           
                          <Carousel>
@@ -49,9 +67,7 @@ function ShoppingHome() {
         <img height={300} src={demo.images[3]} alt="" />
       </Carousel.Item>
 
-      <Carousel.Item>
-        <img height={300} src={demo.images[4]} alt="" />
-      </Carousel.Item>
+   
     </Carousel>
 
              <Card.Body>
@@ -66,14 +82,14 @@ function ShoppingHome() {
                <ListGroup.Item style={{color:"green",fontWeight:500}}>{demo.price}$</ListGroup.Item>
              </ListGroup>
              <Card.Body className='d-flex justify-content-around'>
-               <Button>Add To Cart</Button>
+               <Button onClick={addcart(demo.id)}>Add To Cart</Button>
                <Button>Buy Now</Button>
              </Card.Body>
            </Card>
                     </Col>
                 ))}
             </Row>
-        </Container> */}
+        </Container>
     </div>
   )
 }
