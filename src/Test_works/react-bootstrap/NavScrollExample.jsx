@@ -40,7 +40,7 @@ function NavScrollExample() {
             <Form.Control
               type="search"
               placeholder="Search"
-              className="me-2"
+              className="me-2"   
               aria-label="Search"
             />
             <Button variant="outline-danger">Search</Button>
@@ -52,3 +52,4 @@ function NavScrollExample() {
 }
 
 export default NavScrollExample;
+navbar//
