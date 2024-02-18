@@ -1,6 +1,7 @@
+import axios from "axios";
 import React, { useContext, useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
+// import { Link, useNavigate } from "react-router-dom";
 
 
 function SignUp() {
@@ -9,23 +10,21 @@ function SignUp() {
 
     // const navigate=useNavigate()
 
-    const [user, setuser] = useState({
-        name:"",
-        email:"",
-        username:"",
-        password:""
-    })
 
-    const handleChange=(event)=>{
-        setuser({...user,[event.target.name]:event.target.value})
-    }
+    const [name,setname]=useState('')
+    const [email,setemail]=useState('')
+    const [username,setusername]=useState('')
+    const [password,setpassword]=useState('')
 
-    const handleSubmit=(event)=>{
-        event.preventDefault();
-        // navigate('/')
-        console.log(" Data:", user);
-        alert("sign-up successful!");
-    }
+  
+
+   const handleSubmit=async (e)=>{
+    e.preventDefault();
+    const student=await axios.post("http://localhost:4000/student/signup",{name,email,username,password})
+    console.log(student.data)
+    alert("sign up successfull")
+
+   }
    
 
   return (
@@ -35,22 +34,22 @@ function SignUp() {
 
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Name</Form.Label>
-          <Form.Control type="text"  onChange={handleChange} name="name" required/>
+          <Form.Control type="text"  onChange={(e)=>setname(e.target.value)} name="name" value={name} required/>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Email address</Form.Label>
-          <Form.Control type="email"  onChange={handleChange} name="email" required/>
+          <Form.Control type="email"  onChange={(e)=>setemail(e.target.value)} name="email" value={email} required/>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Username</Form.Label>
-          <Form.Control type="text"  onChange={handleChange} name="username" required/>
+          <Form.Control type="text"  onChange={(e)=>setusername(e.target.value)} name="username" value={username} required/>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Password</Form.Label>
-          <Form.Control type="password"  onChange={handleChange} name="password" required/>
+          <Form.Control type="password"  onChange={(e)=>setpassword(e.target.value)} name="password" value={password} required/>
         </Form.Group>
 
         <Button type="submit">Sign Up</Button>

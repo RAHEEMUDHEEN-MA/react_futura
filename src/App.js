@@ -30,6 +30,11 @@ import GrillaxRouter from "./Test_works/Router/Grillax/GrillaxRouter";
 import ApiCardCarosal from "./Test_works/api/ApiCardCarosal";
 import ShopingRouter from "./Test_works/ShopingCart/ShopingRouter";
 import SignUp from "./Test_works/Credential/SignUp";
+import Login from "./Test_works/Credential/Login";
+import PropsParent from "./Test_works/props/PropsParent";
+import Parent3 from "./Test_works/props/propTask/Parent3";
+import Grid from "./Test_works/Grid";
+import MobileXRouter from "./Test_works/Router/MobileX/MobileXRouter";
 // import EditToDo from "./Test_works/ToDo/EditToDo";
 
 
@@ -45,8 +50,12 @@ function App() {
       {/* <GrillaxRouter/> */}
       {/* <ApiCardCarosal/> */}
       {/* <ShopingRouter/> */}
-      <SignUp/>
-
+      <MobileXRouter/>
+      {/* <SignUp/> */}
+      {/* <Login/> */}
+      {/* <PropsParent/> */}
+      {/* <Parent3/> */}
+      {/* <Grid /> */}
     </div>
   );
 }
